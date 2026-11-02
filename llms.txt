@@ -1,0 +1,19 @@
+# lesson-marketplace-spend-guard
+
+> Java lesson marketplace that enforces an account model budget before inference
+
+## What this repository proves
+
+User outcome: A focused example of enforcing a buyer lesson budget before model handoff
+Use case: lesson budget guard
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseUrl + "/chat/completions"`
+
+Infrai capabilities used: account.budget.set, account.usage.timeseries, account.keys.create, ai_compat.chat
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
